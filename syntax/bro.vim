@@ -15,9 +15,9 @@ endif
 syn keyword Boolean          T F
 syn keyword Typedef          type
 
-syn keyword broStatement     break next continue
+syn keyword broStatement     break next continue fallthrough
 syn keyword broStatement     alarm using of add delete
-syn keyword broStatement     default export event
+syn keyword broStatement     export event
 syn keyword broStatement     print redef return schedule
 syn keyword broStatement     when timeout
 
@@ -55,6 +55,8 @@ syn match broPreCondit       "@FILENAME"
 
 syn keyword broRepeat        for
 syn keyword broConditional   if else
+syn keyword broConditional   switch
+syn keyword broLabel         case default
 
 " String and Character constants
 " Highlight special characters (those which have a backslash) differently
@@ -90,6 +92,7 @@ if version >= 508 || !exists("did_bro_syn_inits")
   HiLink broStatement        Statement
   HiLink broFunction         Function
   HiLink broConditional      Conditional
+  HiLink broLabel            Label
   HiLink broRepeat           Repeat
   HiLink broEscape           Special
   HiLink broType             Type
