@@ -54,7 +54,7 @@ syn match broPreCondit       "@DIR"
 syn match broPreCondit       "@FILENAME"
 
 syn keyword broRepeat        for
-syn keyword broConditional   if else
+syn keyword broConditional   if else while
 syn keyword broConditional   switch
 syn keyword broLabel         case default
 
