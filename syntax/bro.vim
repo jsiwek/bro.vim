@@ -16,14 +16,14 @@ syn keyword Boolean          T F
 syn keyword Typedef          type
 
 syn keyword broStatement     break next continue fallthrough
-syn keyword broStatement     alarm using of add delete
+syn keyword broStatement     alarm using add delete
 syn keyword broStatement     export event
 syn keyword broStatement     print redef return schedule
 syn keyword broStatement     when timeout
 
 syn keyword broStorageClass  local const global
 
-syn keyword broOperator      in "-" "+" "*" "/" "=="
+syn keyword broOperator      "-" "+" "*" "/" "=="
 
 syn keyword broStatement     function nextgroup=broFunction skipwhite
 syn keyword broStatement     event nextgroup=broFunction skipwhite
@@ -56,6 +56,7 @@ syn match broPreCondit       "@FILENAME"
 syn keyword broRepeat        for
 syn keyword broConditional   if else while
 syn keyword broConditional   switch
+syn keyword broConditional   of in
 syn keyword broLabel         case default
 
 syn keyword broAttribute     optional default redef priority
