@@ -58,6 +58,8 @@ syn keyword broConditional   if else while
 syn keyword broConditional   switch
 syn keyword broLabel         case default
 
+syn keyword broAttribute     optional default redef priority
+
 " String and Character constants
 " Highlight special characters (those which have a backslash) differently
 syn match     cSpecial        display contained "\\\(x\x\+\|\o\{1,3}\|.\|$\)"
@@ -90,6 +92,7 @@ if version >= 508 || !exists("did_bro_syn_inits")
 
   " The default methods for highlighting.  Can be overridden later
   HiLink broStatement        Statement
+  HiLink broAttribute        Statement
   HiLink broFunction         Function
   HiLink broConditional      Conditional
   HiLink broLabel            Label
