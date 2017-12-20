@@ -59,7 +59,7 @@ syn keyword broConditional   switch
 syn keyword broConditional   of in
 syn keyword broLabel         case default
 
-syn keyword broAttribute     optional default redef priority
+syn keyword broAttribute     optional default redef priority log
 
 " String and Character constants
 " Highlight special characters (those which have a backslash) differently
