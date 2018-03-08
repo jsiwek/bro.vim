@@ -59,7 +59,10 @@ syn keyword broConditional   switch
 syn keyword broConditional   of in
 syn keyword broLabel         case default
 
-syn keyword broAttribute     optional default redef priority log
+syn keyword broAttribute     redef priority log optional default
+syn keyword broAttribute     add_func delete_func expire_func
+syn keyword broAttribute     read_expire write_expire create_expire
+syn keyword broAttribute     type_column deprecated error_handler
 
 " String and Character constants
 " Highlight special characters (those which have a backslash) differently
