@@ -21,7 +21,7 @@ syn keyword broStatement     export event
 syn keyword broStatement     print redef return schedule
 syn keyword broStatement     when timeout
 
-syn keyword broStorageClass  local const global
+syn keyword broStorageClass  local const global option
 
 syn keyword broOperator      "-" "+" "*" "/" "=="
 
