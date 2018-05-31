@@ -56,7 +56,7 @@ syn match broPreCondit       "@FILENAME"
 syn keyword broRepeat        for
 syn keyword broConditional   if else while
 syn keyword broConditional   switch
-syn keyword broConditional   of in as
+syn keyword broConditional   of in as is
 syn keyword broLabel         case default
 
 syn keyword broAttribute     redef priority log optional default
