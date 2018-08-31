@@ -45,6 +45,7 @@ syn match broLoad            "@load-plugin"
 syn match broLoad            "@unload"
 syn match broLoad            "@prefixes"
 
+syn match broPreCondit       "@deprecated"
 syn match broPreCondit       "@if"
 syn match broPreCondit       "@ifdef"
 syn match broPreCondit       "@ifndef"
