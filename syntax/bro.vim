@@ -60,10 +60,7 @@ syn keyword broConditional   switch
 syn keyword broConditional   of in as is
 syn keyword broLabel         case default
 
-syn keyword broAttribute     redef priority log optional default
-syn keyword broAttribute     add_func delete_func expire_func
-syn keyword broAttribute     read_expire write_expire create_expire
-syn keyword broAttribute     type_column deprecated error_handler
+syn match broAttribute '&\(redef\|priority\|log\|optional\|default\|add_func\|delete_func\|expire_func\|read_expire\|write_expire\|create_expire\|type_column\|deprecated\|error_handler\)'
 
 " String and Character constants
 " Highlight special characters (those which have a backslash) differently
@@ -97,7 +94,7 @@ if version >= 508 || !exists("did_bro_syn_inits")
 
   " The default methods for highlighting.  Can be overridden later
   HiLink broStatement        Statement
-  HiLink broAttribute        Statement
+  HiLink broAttribute        StorageClass
   HiLink broFunction         Function
   HiLink broConditional      Conditional
   HiLink broLabel            Label
