@@ -81,7 +81,7 @@ syn match   broNumber      "\<0x\x\+\>"
 syn match   broNumber      "\<\d\+\>"
 syn match   broNumber      "\.\d\+\([eE][+-]\=\d\+\)\="
 
-syn match broInterval      "\d\+\(\.\d\+\)\=\(\(day\|hr\|min\|sec\|usec\)s\=\)"
+syn match broInterval      "\d\+\(\.\d\+\)\=\(\(day\|hr\|min\|sec\|msec\|usec\)s\=\)"
 syn match broPort          "\d\{1,5}\/\(tcp\|udp\|icmp\)"
 
 if version >= 508 || !exists("did_bro_syn_inits")
